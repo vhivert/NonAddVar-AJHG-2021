@@ -47,7 +47,9 @@ void Write_CausalInfo(data_struct data, string outfile){
   
 }
 
-
+/*
+ This function is part of the SelEstim software code: Vitalis R, Gautier M, Dawson KJ and Beaumont MA (2014) Detecting and measuring selection from gene frequency data. Genetics 196: 799-817
+*/
 
 char *print_time(double time)
 
