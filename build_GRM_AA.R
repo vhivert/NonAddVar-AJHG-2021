@@ -79,11 +79,11 @@ Built_GRMAA = function(prefix="data_test",prefix.save="data_test_AA",size=4, pow
         print(part)
         ## open file connections and read in data
         if(part<10){
-            bin.file.name.save <- paste(prefix.save,".part_",PART,"_00",part,".grm.bin",sep="")
+            bin.file.name.save <- paste(prefix.save,".part_",PART,"_00",part,".AA.grm.bin",sep="")
         }else if (part<100){
-            bin.file.name.save <- paste(prefix.save,".part_",PART,"_0",part,".grm.bin",sep="")
+            bin.file.name.save <- paste(prefix.save,".part_",PART,"_0",part,".AA.grm.bin",sep="")
         }else if (part<1000){
-            bin.file.name.save <- paste(prefix.save,".part_",PART,"_",part,".grm.bin",sep="")
+            bin.file.name.save <- paste(prefix.save,".part_",PART,"_",part,".AA.grm.bin",sep="")
         }
         
         number_grm = min(grm_per_part, nn- grm_per_part*(part-1)) #grm we take in that part: the max except last part where we may have to take less
